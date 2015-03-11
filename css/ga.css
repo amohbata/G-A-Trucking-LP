@@ -155,13 +155,13 @@ hr.small {
 
 .slider-content-container {
     width: 100%;
-    height: 100%;
+    height: 520px;
     overflow: hidden;
 }
 
 .slider-wrapper {
     width: 300%;
-    height: 100%;
+    height: 520px;
     position: relative;
     left: 0px;
 }
@@ -169,27 +169,22 @@ hr.small {
 .slide {
     float: left;
     width: 33.3%;
-    height: 100%;
+    height: 520px;
     background-repeat: no-repeat;
     background-size: cover;
     white-space: normal;
-    /*position: absolute;*/
-/*    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;*/
 }
 
 #slide-0 {
-    background-image: url("../img/truck_slide_1.jpg");
+    background-image: url("../img/truck_main_1.jpg");
 }
 
 #slide-1 {
-    background-image: url("../img/truck_slide_2.jpg");
+    background-image: url("../img/truck_main_2.jpg");
 }
 
 #slide-2 {
-    background-image: url("../img/truck_slide_3.jpg");
+    background-image: url("../img/truck_main_3.jpg");
 }
 
 .slider-nav-links {
@@ -220,7 +215,7 @@ hr.small {
 }
 
 .slider-nav-links ul li:hover {
-    background-color: #F6F6B4;
+    background-color: rgb(0, 102, 204);
 }
 
 .slider-nav-links ul li.active {
@@ -234,97 +229,157 @@ hr.small {
     color: #FFFFFF;
 }
 
+/* Main Navigation Bar */
+
+.nav-bar {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 25px 0;
+}
+
+.nav-bar a {
+    padding: 0 10px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.nav-bar a:hover {
+    color: rgb(0, 102, 204);
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.logo-container {
+    background-image: url("../img/logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    display: inline-block;
+    height: 75px;
+    width: 170px;
+    margin-left: 50px;
+}
+
+.navigation-container {
+    float: right;
+    display: inline-block;
+    margin: 2% 6% 2% 0;
+}
+
 /* About */
 
 .about {
     padding: 50px 0;
-    background-color: #333333;
-    color: #bbbbbb;
+    background-color: rgb(246, 246, 246);
+    color: #000000;
+    text-align: center;
+    position: relative;
 }
 
 .about-text {
     padding: 60px 20px;
+    margin: 35px auto;
 }
 
 .about-text-description {
     font-size: 1.15em;
+    padding: 1.5% 13%;
 }
 
-.about-title {
-    color: #F6F6B4;
+.about-box-text {
+    /*position: absolute;*/
+    /*width: 65%;*/
 }
 
-
-/* Featured Items */
-
-.captioned-slider {
+.about-box {
+    height: 330px;
     width: 100%;
-    overflow: hidden;
+    max-width: 405px;
+    display: inline-block;
+    text-align: left;
+    color: #ffffff;
+    padding: 35px;
 }
 
-.captioned-slider {
-    height: 300px;
-    width: 450px;
-    overflow-x: scroll;
-    margin: auto;
+.about-box-left {
+    background-color: rgb(0, 102, 204);
+    margin-right: -3px;
 }
 
-/*holder width should be 100% * the number of slides*/
-
-.holder {
-    width: 300%;
+.about-box-right {
+    background-color: rgb(0, 102, 204);
+    margin-left: -3px;
 }
 
-/* Specials */
+.about-box-center {
+    background-color: rgb(0, 126, 229);
+}
 
-.specials {
-    background-color: #231f20;
+.about-icon {
+    padding-top: 20px;
+    float: right;
+}
+
+/* B-Trailer Truck */
+
+.product-showcase {
+    background-color: rgb(0,102,204);
     color: #bbbbbb;
-}
-
-.special-box {
-    min-height: 200px;
-    background-color: #444444;
-    margin-top: -20px;
-    padding: 20px;
-    text-align: center;
-}
-
-@media(max-width:768px) {
-    .special-box {
-        width: 487px;
-        margin: auto;
-    }
-}
-
-.specials-three-item-row {
-    margin-left: 12.5%;
-}
-
-.special-item:hover {
-    opacity: 0.8;
-}
-
-.special-item img {
-    padding-top: 35px;
-}
-
-.special-text {
-    font-size: 1.15em;
-    color: #F6F6B4;
-}
-
-.specials-section-heading {
-    color: #F6F6B4;
-    text-align: center;
-}
-
-.specials {
+    width: 100%;
     padding: 50px 0;
 }
 
-.special-item {
-    margin-bottom: 30px;
+.product-showcase-heading {
+    color: #fff;
+    text-align: center;
+}
+
+.b-trailer-section {
+    padding: 2% 5%;
+}
+
+.b-trailer-image-container {
+    border-radius: 4px 4px 0 0;
+    background-size: cover;
+    height: 180px;
+    background-repeat: no-repeat;
+}
+
+.b-trailer-image-1 {
+    background-image: url("../img/b-trailer-2.jpg");
+}
+
+.b-trailer-image-2 {
+    background-image: url("../img/b-trailer-1.jpg");
+}
+
+.b-trailer-image-3 {
+    background-image: url("../img/b-trailer-3.jpg");
+}
+
+.b-trailer-info-box {
+    border-radius: 4px;
+    background: rgb(246, 246, 246);
+    color: #000000;
+    text-align: center;
+    min-height: 420px;
+    max-width: 360px;
+    margin: 40px auto 0;
+}
+
+.b-heading {
+    font-size: 22px;
+    padding: 0 6%;
+}
+
+.b-description {
+    padding: 0 6% 6%;
 }
 
 .img-special {
@@ -338,39 +393,64 @@ hr.small {
 /* Map */
 
 .map {
-    height: 420px;
+    background: rgb(246, 246, 246);
 }
 
 .map iframe {
     pointer-events: none;
+    margin: 50px 0;
+    border: 2px rgb(0, 126, 229) solid;
 }
 
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
+.contact {
+    text-align: center;
+    padding-top: 10%;
 }
 
 /* Footer */
 
 footer {
-    padding: 100px 0;
-    background-color: #231f20;
+    padding: 30px 0;
+    background-color: rgb(0,102,204);
     color: #bbbbbb;
 }
 
 i {
-    color: #F6F6B4;
+    color: rgb(0, 126, 229);
 }
 
 .list-unstyled a {
-    color: #F6F6B4;
+    color: rgb(0, 126, 229);
 }
 
 .footer-title {
-    color: #F6F6B4;
+    color: rgb(0, 126, 229);
 }
 
 .text-muted a {
-    color: #F6F6B4;
+    color: #ffffff;
+}
+
+/* Media Queries */
+
+@media(max-width:729px) {
+    .navigation-container {
+        margin: 0;
+    }
+}
+
+@media(max-width:768px) {
+    .about-box-left, .about-box-right {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:991px) {
+    .about-icon {
+        padding: 0;
+    }
+    .contact {
+        padding: 0 0 45px;
+    }
 }

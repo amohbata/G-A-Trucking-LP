@@ -149,14 +149,14 @@ hr.small {
 .header {
     display: table;
     position: relative;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .slider-content-container {
-    width: 100%;
+/*    width: 100%;
     height: 620px;
-    overflow: hidden;
+    overflow: hidden;*/
 }
 
 /*.slider-wrapper {
@@ -168,8 +168,8 @@ hr.small {
 
 .slide {
     /*float: left;*/
-    width: 100%;
-    height: 620px;
+/*    width: 100%;
+    height: 620px;*/
     background-repeat: no-repeat;
     background-size: cover;
     /*white-space: normal;*/
@@ -184,7 +184,9 @@ hr.small {
 }
 
 #slide-2 {
-    background-image: url("../img/white_truck.jpg");
+    /*background-image: url("../img/white_truck.jpg");*/
+    max-width: 100%;
+    height: auto;
 }
 
 .slider-nav-links {
@@ -260,16 +262,20 @@ hr.small {
     background-size: contain;
     background-repeat: no-repeat;
     float: left;
-    display: inline-block;
+    display: block;
     height: 75px;
     width: 170px;
-    margin-left: 50px;
+    margin-left: 3%;
 }
 
 .navigation-container {
     float: right;
-    display: inline-block;
+    display: block;
     margin: 2% 6% 2% 0;
+}
+
+.navigation-container a {
+    vertical-align: middle;
 }
 
 /* About */
@@ -437,9 +443,10 @@ footer .text-muted {
 
 /* Media Queries */
 
-@media(max-width:729px) {
-    .navigation-container {
-        margin: 0;
+@media(max-width:480px) {
+    .navigation-container, .logo-container {
+        margin: auto;
+        float: none;
     }
 }
 
